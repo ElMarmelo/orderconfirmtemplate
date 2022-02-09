@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order confirmation</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body>
+    <div class="border-2 shadow-md border-slate-300 m-10 font-sans p-5 ">
+
+        <div class="flex justify-end p-5">
+            <img class="h-24 w-24" src="./pngwing.com.png" alt="Provisional Logo">
+        </div>
+
+    <h3 class="font-bold text-xl text-green-500 p-5"> Order #250 </h3>
+    <div>
+    <h1 class="text-3xl font-bold p-5"> Thanks for your purchase!</h1>
+    <h2 class="text-xl text-slate-500 font-semibold p-5">Thank you for shopping with ${store.name} <br> We've recieved your order and we're already working on it. You'll get an email soon with more details.</h2>
+    </div>
+
+    <div class="flex items-center justify-center">
+        <div class="grid grid-cols-2 gap-24">
+            <div>
+                <h4 class="border-solid border-b-2 border-slate-500 text-xl font-semibold mb-5"> Delivery Address </h4>
+                <p class="text-slate-600 leading-loose">
+                    ${customer.name} - ${customer.phone}<br>
+                    ${customer.email} (${customer.phoneNumber}) <br>
+                    San José<br>
+                    Sabanilla, Montes de Oca<br>
+                    Residencial la maravilla, Casa #35
+                </p>
+            </div>
+            <div>
+                <h4 class="border-solid border-b-2 border-slate-500 text-xl font-semibold mb-5"> Billing Information </h4>
+                <p class="text-slate-600 leading-loose">
+                    ${customer.name} - ${customer.phone}<br>
+                    ${customer.email} (${customer.phoneNumber}) <br>
+                    San José<br>
+                    Sabanilla, Montes de Oca<br>
+                    Residencial la maravilla, Casa #35
+                </p>
+            </div>
+            <div>
+                <h4 class="border-solid border-b-2 border-slate-500 text-lg font-semibold mb-5"> Addtional Notes</h4>
+                <p class="text-slate-600 leading-loose">
+                    Hello this is some text I am fitting here because I don't really like lorem ipsum, gonna insert a moderate ammount of text just like an end user would, Carlos si está leyendo esto está hecho con Tailwind para maquetar más rápido
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="flex justify-center pt-5">
+        <button class="bg-green-600 border-green-800 rounded-lg p-5 text-white border-1.5 shadow-md">View my order</button>
+        <button class="bg-green-600 border-green-800 rounded-lg p-5 text-white border-1.5 shadow-md ml-10">Continue shopping</button>
+
+    </div>
+    </div>
+    <script src="/src/index.js"> </script>
+</body>
+</html>
